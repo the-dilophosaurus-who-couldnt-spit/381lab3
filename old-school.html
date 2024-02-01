@@ -14,20 +14,20 @@ Description : Understanding Old-School HTML Layouts.
     <style>
         table { width: 100%; }
         td { vertical-align: top;}
-        /*
+        
         td { border: 1px dashed gray; } 
-        */
+        
         #header, #footer { background-color: #f2f2f2; text-align: center; padding: 10px; }
         #menu { width: 150px; background-color: #e6e6e6; }
         #main { padding: 15px; }
         #footer { position: fixed; bottom: 0; width: 100%;}
 
         .news-item { padding: 10px; }
-        /*
+        
         .large { width: 100%; }
         .medium { width: 70%; }
         .small { width: 30%; }
-        */
+        
     </style>
 </head>
 <body>
@@ -45,6 +45,7 @@ Description : Understanding Old-School HTML Layouts.
         <td id="main">
             <table id="main-table">
                 <tr>
+                    
                     <td class="large news-item"> 
                         <!-- Large news item -->
                         <header>
@@ -65,7 +66,7 @@ Description : Understanding Old-School HTML Layouts.
                     </td>
                 </tr>
                 <tr>
-                    
+                <table cellpadding="0" cellspacing="0">
                     <td class="small news-item" colspan="2">
                         <!-- Small news item -->
 
@@ -87,10 +88,11 @@ Description : Understanding Old-School HTML Layouts.
                         </article>
 
                     </td>
+                
                     <td class="medium news-item">
                         <!-- Medium news item -->
                         <header>
-                            <h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
+                            <h1>Alvin Long Takes a Historic Spacewalk Near the ISS</h1>
                         </header>
 
                         <img src="images/medium.jpg" alt="Medium Image" width="100%">
@@ -105,7 +107,7 @@ Description : Understanding Old-School HTML Layouts.
                             <p>The successful spacewalk not only demonstrates human resilience but also advances our understanding of space and our capabilities to explore further into the unknown.</p>
                         </article>
                     </td>                
-                    
+                </table>
                 </tr>
             </table>
             
