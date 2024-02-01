@@ -2,7 +2,7 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 3 Exercise D
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
+Author(s)   : Thanishque Harshaa, Alving Long
 Submission  : May 21, 2030
 Description : Learning CSS.
 =========================================================
@@ -16,12 +16,13 @@ Description : Learning CSS.
             /*Modify #margin-demo to have a margin of 30px and a solid black border of 2px. Also, the borders must fit the content.*/
             margin: 30px;
             border: 2px solid black;
+            display: inline-block; /* To make sure the borders fit the content */
         }
 
         .padding-demo {
-            /*Adjust .padding-demo to include 30px padding and a dashed red border of 2px.*/
+            /*Adjust padding-demo to include 30px padding and a dashed red border of 2px.*/
             padding: 30px;
-            border: dashed red;
+            border: 2px dashed red;
         }
 
         .container .nested-opacity {
@@ -29,31 +30,29 @@ Description : Learning CSS.
             opacity: 0.2;
         }
 
-        
+
         .inline-demo {
             /*Change the display to see all elements of this type in a line.*/
             margin: 15px;
-            display: inline;
+            display: inline-block;
         }
 
-        /*
-        Apply colors and float properties to the children of .block-demo. 
-        The first child should be red and stick to left side, the second blue and sit in the middle, and the third green and stick to right side. 
-        Here, you might need to look at the technique we used for the first and second children.
-        */
+        .block-demo {
+            /*Ensure .block-demo centers its text.*/
+            text-align: center;
+        }
 
         .block-demo > .inline-demo:first-child {            
             /*
             Add CSS that I stick the first child to the left side of the screen.
             */
             color: red;
-            float: right;
+            float: left;
             
         }
 
         .block-demo > .inline-demo:nth-child(2) {            
             color: blue;
-            display:inline-block;
         }
 
         /* Add your css for the thrid child here. */
